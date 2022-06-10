@@ -8,7 +8,7 @@ class CharacterTest {
 
     @Test
     public void charactersShouldHave1000hpAtStart() {
-        Character sonGoku = new Character(1000,1,true,"melee", 2);
+        Character sonGoku = new Character();
 
         int result = sonGoku.getHealth();
 
@@ -18,7 +18,7 @@ class CharacterTest {
 
     @Test
     public void charactersShouldStartWithLvl1() {
-        Character sonGoku = new Character(1000,1,true, "melee",2);
+        Character sonGoku = new Character();
 
         int result = sonGoku.getLvl();
 
@@ -27,7 +27,7 @@ class CharacterTest {
 
     @Test
     public void charactersShouldStartBeingAlive() {
-        Character sonGoku = new Character(1000,1,true, "melee",2);
+        Character sonGoku = new Character();
 
         boolean result = sonGoku.getIsAlive();
 
@@ -62,8 +62,8 @@ class CharacterTest {
 
     @Test
     public void charactersDiesIfDamageIsBiggerThanHealth(){
-        Character sonGoku = new Character(1000,1,true, "melee",2);
-        Character victim = new Character(1000,1,true, "ranged",20);
+        Character sonGoku = new Character(1000,1,true,1);
+        Character victim = new Character(1000,1,true, 1);
 
         sonGoku.attacksOther(victim, 1200);
         boolean result = victim.getIsAlive();
@@ -91,9 +91,9 @@ class CharacterTest {
 
     @Test
     public void charactersCanHealRefactored(){
-        Character healer = new Character(1000,1,true, "melee",2);
+        Character healer = new Character(1000,1,true,1);
 
-        Character luffy = new Character(1000,1,true, "ranged",20);
+        Character luffy = new Character(1000,1,true,1);
 
 
         luffy.attacksOther(healer, 100);
@@ -105,8 +105,8 @@ class CharacterTest {
 
     @Test
     public void charactersCantHealthOver1000(){
-        Character sonGoku = new Character(1000,1,true, "melee",2);
-        Character luffy = new Character(1000,1,true, "ranged",20);
+        Character sonGoku = new Character(1000,1,true,1);
+        Character luffy = new Character(1000,1,true,1);
 
 
         sonGoku.attacksOther(luffy, 100);
@@ -120,7 +120,7 @@ class CharacterTest {
     @Test
     public void charactersCantDamageItSelfs(){
 
-        Character sonGoku = new Character(1000,1,true, "melee",2);
+        Character sonGoku = new Character(1000,1,true,1);
 
         sonGoku.attacksOther(sonGoku, 100);
         int result = sonGoku.getHealth();
@@ -132,8 +132,8 @@ class CharacterTest {
     @Test
     public void charactersOnlyCanHealItSelf(){
 
-        Character sonGoku = new Character(1000,1,true, "melee",2);
-        Character victim = new Character();
+        Character sonGoku = new Character(1000,1,true,1);
+        Character victim = new Character(1000,1,true,1);
 
         sonGoku.attacksOther(victim, 100);
         System.out.println(victim.getHealth());
@@ -161,8 +161,8 @@ class CharacterTest {
 
     @Test
     public void onAttackIfTargetIs5LevelsOrMoreDamageIsReducedToHalfAndReverse(){
-        Character sonGoku = new Character(1000,2,true, "melee",2);
-        Character Luffy = new Character(1000,8,true,"ranged", 20);
+        Character sonGoku = new Character(1000,2,true,1);
+        Character Luffy = new Character(1000,8,true,1);
 
 
         sonGoku.attacksOther(Luffy, 100);
@@ -174,7 +174,7 @@ class CharacterTest {
 
     @Test
     public void charactersShouldHaveMaxRange(){
-        Character luffy = new Character(1000,1,true, "ranged",20);
+        Character luffy = new Character();
 
         int result = luffy.getMaxRange();
 
@@ -183,16 +183,35 @@ class CharacterTest {
 
     @Test
     public void meleeCharactersHaveARangeOf2MetersAndRangedCharactersHaveARangeOf20meters(){
-        Character Luffy = new Character(1000,1,true, "ranged", 20);
-        Character Goku = new Character(1000,1,true, "melee",2);
+        Character Luffy = new Character(1000,1,true,1);
+        Character Goku = new Character(1000,1,true,1);
 
 
-        Luffy.setTypeOfCharacterMelee("melee");
-        Goku.setTypeOfCharacterRanged("ranged");
+        Luffy.setTypeOfCharacterMelee();
+        Goku.setTypeOfCharacterRanged();
 
         int result = Luffy.getMaxRange();
 
         assertEquals(2, result);
+    }
+
+    @Test
+    public void charactersMustBeInRangeToAttackTarget(){
+        Character Luffy = new Character(1000,2,true, 10);
+        Character Goku = new Character(1000,8,true,1);
+
+        Luffy.setTypeOfCharacterMelee();
+        Goku.setTypeOfCharacterRanged();
+
+
+        Goku.attacksOther(Luffy,100);
+
+
+        int result = Luffy.getHealth();
+
+        assertEquals(800, result);
+
+
     }
 
 

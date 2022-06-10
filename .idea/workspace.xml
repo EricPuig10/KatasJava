@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87140c95-12d5-45df-9cb6-13ae4e179900" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/katas/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/katas/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/katas/FizzBuzz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/katas/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/katas/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/katas/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/katas/CalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/katas/CharacterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/katas/FizzBuzzTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/biblio/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/biblio/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/biblio/AuthorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/biblio/BookTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/katas/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/katas/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/katas/Position.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/katas/CharacterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/katas/CharacterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -75,10 +71,81 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="biblio" />
+      <recent name="Biblio" />
       <recent name="katas" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CharacterTest">
+  <component name="RunManager" selected="Gradle.AuthorTest.authorCanCountBooks">
+    <configuration name="AuthorTest.authorCanAddABook" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;biblio.AuthorTest.authorCanAddABook&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthorTest.authorCanCountBooks" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;biblio.AuthorTest.authorCanCountBooks&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BookTest.bookCanCreateWithAttributes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;biblio.BookTest.bookCanCreateWithAttributes&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="CharacterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -102,7 +169,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CharacterTest.onAttackIfTargetIs5LevelsOrMoreDamageIsReducedToHalfAndReverse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CharacterTest.charactersMustBeInRangeToAttackTarget" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -115,76 +182,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;katas.CharacterTest.onAttackIfTargetIs5LevelsOrMoreDamageIsReducedToHalfAndReverse&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CharacterTest.onDealingDamageIfTargetIs5orMoreLvlsAboveTheAttackerDamageIsReducedBy50PercentAndReverse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;katas.CharacterTest.onDealingDamageIfTargetIs5orMoreLvlsAboveTheAttackerDamageIsReducedBy50PercentAndReverse&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="FizzBuzzTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;katas.FizzBuzzTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="FizzBuzzTest.receivesAnArrayOfUsersWithAgeAndNameAndReturnsUsersGreaterOrEqual18years" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;katas.FizzBuzzTest.receivesAnArrayOfUsersWithAgeAndNameAndReturnsUsersGreaterOrEqual18years&quot;" />
+            <option value="&quot;katas.CharacterTest.charactersMustBeInRangeToAttackTarget&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -196,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AuthorTest.authorCanCountBooks" />
+        <item itemvalue="Gradle.AuthorTest.authorCanAddABook" />
+        <item itemvalue="Gradle.BookTest.bookCanCreateWithAttributes" />
+        <item itemvalue="Gradle.CharacterTest.charactersMustBeInRangeToAttackTarget" />
         <item itemvalue="Gradle.CharacterTest" />
-        <item itemvalue="Gradle.FizzBuzzTest.receivesAnArrayOfUsersWithAgeAndNameAndReturnsUsersGreaterOrEqual18years" />
-        <item itemvalue="Gradle.FizzBuzzTest" />
-        <item itemvalue="Gradle.CharacterTest.onAttackIfTargetIs5LevelsOrMoreDamageIsReducedToHalfAndReverse" />
-        <item itemvalue="Gradle.CharacterTest.onDealingDamageIfTargetIs5orMoreLvlsAboveTheAttackerDamageIsReducedBy50PercentAndReverse" />
       </list>
     </recent_temporary>
   </component>

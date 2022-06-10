@@ -1,13 +1,15 @@
 package katas;
 
+import java.awt.*;
+
 public class Character {
 
-    public Character(int health, int lvl, boolean isAlive, String typeOfCharacter, int maxRange) {
+    public Character(int health, int lvl, boolean isAlive, int position) {
         this.health = health;
         this.lvl = lvl;
         this.isAlive = isAlive;
-        this.typeOfCharacter = typeOfCharacter;
-        this.maxRange = maxRange;
+        this.position = position;
+
     }
 
     public Character() {
@@ -18,16 +20,20 @@ public class Character {
     private int lvl = 1;
     private boolean isAlive = true; //is alive or not
 
-    //private Position position;
+    private int position;
+
+    public void setPosition(int num){
+        this.position=num;
+    }
+
+    private int maxPosition = 100;
     private String typeOfCharacter;
 
-    public void setTypeOfCharacterMelee(String melee) {
-        this.typeOfCharacter = melee;
+    public void setTypeOfCharacterMelee() {
         this.maxRange = 2;
     }
 
-    public void setTypeOfCharacterRanged(String ranged) {
-        this.typeOfCharacter = ranged;
+    public void setTypeOfCharacterRanged() {
         this.maxRange = 20;
     }
 
@@ -42,6 +48,8 @@ public class Character {
     }
 
     private int maxHealth = 1000;
+
+    private int differenceOf5Levels = 5;
 
     public int getHealth() {
         return this.health;
@@ -61,17 +69,22 @@ public class Character {
 
     public void attacksOther(Character victim, int damage) {
         if (this == victim) return;
+        System.out.println(this.position);
+        System.out.println(victim.position);
+        System.out.println(this.maxRange);
 
-        if (this.lvl - victim.lvl >= 5) {
-            victim.damage(victim, damage*2);
+        if (this.position - victim.position > this.maxRange) return;
+
+        if (victim.position - this.position > this.maxRange) return;
+
+        if (this.lvl - victim.lvl >= differenceOf5Levels) {
+            victim.damage(victim, damage * 2);
             return;
         }
-        if (victim.lvl - this.lvl >= 5) {
-            victim.damage(victim, damage/2);
+        if (victim.lvl - this.lvl >= differenceOf5Levels) {
+            victim.damage(victim, damage / 2);
             return;
         }
-
-
         victim.damage(victim, damage);
     }
 
@@ -81,7 +94,9 @@ public class Character {
             this.isAlive = false;
             return;
         }
-        this.health -= damage;
+    this.health -= damage;
+
+
     }
 
     /* Logica reversa
