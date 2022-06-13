@@ -1,11 +1,11 @@
 package katas;
 
+import katas.FizzBuzz.FizzBuzz;
+import katas.FizzBuzz.Users;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-
 
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -44,7 +44,7 @@ class FizzBuzzTest {
     public void receivesAnArrayOfUsersWithAgeAndNameAndReturnsUsersGreaterOrEqual18years(){
         FizzBuzz fizzBuzz = new FizzBuzz();
 
-        Users [] user = new Users[3];
+        Users[] user = new Users[3];
 
         user[0] = new Users(21,"Eric");
         user[1] = new Users(19,"Ari");

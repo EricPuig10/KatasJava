@@ -1,4 +1,6 @@
-package katas;
+package katas.rpgCombat;
+
+import katas.rpgCombat.Character;
 
 public interface Prop {
 

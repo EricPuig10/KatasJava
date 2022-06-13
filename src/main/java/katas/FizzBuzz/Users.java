@@ -1,4 +1,4 @@
-package katas;
+package katas.FizzBuzz;
 
 public class Users
 {
@@ -6,7 +6,7 @@ public class Users
     public String name;
     public int age;
 
-    Users(int age, String name)
+    public Users(int age, String name)
     {
         this.age = age;
         this.name = name;

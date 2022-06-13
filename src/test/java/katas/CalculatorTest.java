@@ -1,5 +1,6 @@
 package katas;
 
+import katas.Calculator.Calculator;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

@@ -1,5 +1,9 @@
 package katas;
 
+import katas.rpgCombat.Character;
+import katas.rpgCombat.Faction;
+import katas.rpgCombat.House;
+import katas.rpgCombat.Prop;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

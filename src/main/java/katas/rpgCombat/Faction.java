@@ -1,7 +1,6 @@
-package katas;
+package katas.rpgCombat;
 
-import java.util.ArrayList;
-import java.util.List;
+import katas.rpgCombat.Character;
 
 public class Faction {
     public String getFactionName() {

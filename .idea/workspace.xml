@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87140c95-12d5-45df-9cb6-13ae4e179900" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Bird.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/biblio/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/katas/Faction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/katas/House.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/katas/Prop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/MongoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/MySqlRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/TaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/TaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Animals/AnimalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/biblio/UserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tasks/TaskServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/biblio/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/biblio/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/katas/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/katas/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/biblio/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/biblio/BookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/katas/CharacterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/katas/CharacterTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="87140c95-12d5-45df-9cb6-13ae4e179900" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,30 +75,7 @@
       <command value="Eric.rentABook(book);" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CharacterTest.charactersCanAttackObj">
-    <configuration name="AnimalTest.catCanTalk" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;Animals.AnimalTest.catCanTalk&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.CharacterTest">
     <configuration name="CharacterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -158,6 +113,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;katas.CharacterTest.charactersCanAttackObj&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CharacterTest.whenHealthEquals0ObjGetsDestroyed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;katas.CharacterTest.whenHealthEquals0ObjGetsDestroyed&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -215,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CharacterTest" />
+        <item itemvalue="Gradle.CharacterTest.whenHealthEquals0ObjGetsDestroyed" />
         <item itemvalue="Gradle.CharacterTest.charactersCanAttackObj" />
         <item itemvalue="Gradle.TaskServiceTest" />
         <item itemvalue="Gradle.TaskServiceTest.saveTaskTest" />
-        <item itemvalue="Gradle.AnimalTest.catCanTalk" />
-        <item itemvalue="Gradle.CharacterTest" />
       </list>
     </recent_temporary>
   </component>

@@ -1,14 +1,14 @@
-package katas;
+package katas.rpgCombat;
 
-public class House implements Prop{
+public class House implements Prop {
 
-    House(int health){
+    public House(int health){
         this.health=health;
     }
 
-    private int health;
-    private boolean isAlive = true;
-    private int maxHealth = 1000;
+    public int health;
+    public boolean isAlive = true;
+    public int maxHealth = 1000;
 
 
 
