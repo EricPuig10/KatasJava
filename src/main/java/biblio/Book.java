@@ -1,11 +1,10 @@
 package biblio;
 
 public class Book {
-    private
-
-    Author author;
+    private Author author;
     private String title;
 
+    private boolean isRent;
 
 
     public Book(String title, Author author) {
@@ -29,4 +28,15 @@ public class Book {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    public boolean getIsRent() {
+        return isRent;
+    }
+
+    public boolean setIsRent(boolean bool) {
+        this.isRent = bool;
+        return bool;
+    }
+
+
 }

@@ -1,6 +1,7 @@
 package katas;
 
-import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Character {
 
@@ -22,8 +23,8 @@ public class Character {
 
     private int position;
 
-    public void setPosition(int num){
-        this.position=num;
+    public void setPosition(int num) {
+        this.position = num;
     }
 
     private int maxPosition = 100;
@@ -67,11 +68,14 @@ public class Character {
         this.lvl = num;
     }
 
+
     public void attacksOther(Character victim, int damage) {
         if (this == victim) return;
         System.out.println(this.position);
         System.out.println(victim.position);
         System.out.println(this.maxRange);
+
+        if (isAlly(victim)) return;
 
         if (this.position - victim.position > this.maxRange) return;
 
@@ -94,7 +98,7 @@ public class Character {
             this.isAlive = false;
             return;
         }
-    this.health -= damage;
+        this.health -= damage;
 
 
     }
@@ -135,15 +139,16 @@ public class Character {
     }*/
 
 
-    public void healItself(int heal, Character healer) {
-        healer.heal(heal, healer);
+    public void healsItselfOrAllies(int heal, Character character) {
+        if(isAlly(character) || this==character )
+        character.heal(heal, character);
     }
 
-    private void heal(int heal, Character healer) {
+    private void heal(int heal, Character character) {
         if (!this.isAlive) {
             return;
         }
-        if (this != healer) {
+        if (this != character) {
             this.health = this.health;
             return;
         }
@@ -155,6 +160,38 @@ public class Character {
         this.health = this.health;
 
 
+    }
+
+
+
+    private List<Faction> factions = new ArrayList<Faction>();
+
+    private boolean isAlly = false;
+
+
+    public boolean isMemberOf(Faction faction) {
+        for (int i = 0; i < factions.size(); i++) {
+            if (this.factions.get(i).getFactionName() == faction.getFactionName())
+                return true;
+        }
+        return false;
+    }
+
+    public void addFaction(Faction faction) {
+        factions.add(faction);
+    }
+
+    public void removeFaction(Faction faction) {
+        factions.remove(faction);
+    }
+
+    public boolean isAlly(Character character) {
+        for (int i = 0; i < factions.size(); i++) {
+            if (character.isMemberOf(factions.get(i))) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /*

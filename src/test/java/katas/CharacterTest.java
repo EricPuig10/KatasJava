@@ -91,14 +91,14 @@ class CharacterTest {
 
     @Test
     public void charactersCanHealRefactored(){
-        Character healer = new Character(1000,1,true,1);
+        Character Goku = new Character(1000,1,true,1);
 
         Character luffy = new Character(1000,1,true,1);
 
 
-        luffy.attacksOther(healer, 100);
-        healer.healItself(5,healer);
-        int result = healer.getHealth();
+        luffy.attacksOther(Goku, 100);
+        Goku.healsItselfOrAllies(5,Goku);
+        int result = Goku.getHealth();
 
         assertEquals(905, result);
     }
@@ -110,7 +110,7 @@ class CharacterTest {
 
 
         sonGoku.attacksOther(luffy, 100);
-        luffy.healItself(200, luffy);
+        luffy.healsItselfOrAllies(200, luffy);
         int result = luffy.getHealth();
 
         assertEquals(1000, result);
@@ -137,7 +137,7 @@ class CharacterTest {
 
         sonGoku.attacksOther(victim, 100);
         System.out.println(victim.getHealth());
-        victim.healItself(1, victim);
+        victim.healsItselfOrAllies(1, victim);
         int result = victim.getHealth();
 
         assertEquals(901, result);
@@ -213,6 +213,118 @@ class CharacterTest {
 
 
     }
+    @Test
+    public void charactersMustBelongToOneOrMoreFactionsButWhenCreatedBelongToNoFaction(){
+            Character Goku = new Character();
+
+
+            Faction fire = new Faction("fire");
+            fire.join(Goku);
+
+            assertTrue(Goku.isMemberOf(fire));
+        }
+
+
+    @Test
+    public void charactersCanLeaveFactions(){
+        Character Goku = new Character();
+        Faction fire = new Faction("fire");
+
+        fire.join(Goku);
+        fire.leave(Goku);
+
+        var result = Goku.isMemberOf(fire);
+
+        assertEquals(false , result);
+    }
+
+    @Test
+    public void testGokuAndVegetaAreAllys(){
+        Character Goku = new Character();
+        Character Vegeta = new Character();
+
+        Faction fireFaction = new Faction("fire");
+        fireFaction.join(Goku);
+        fireFaction.join(Vegeta);
+        assertTrue(Goku.isAlly(Vegeta));
+    }
+
+    @Test
+    public void alliesCantHurtOtherAllies(){
+        Character Goku = new Character();
+        Character Vegeta = new Character();
+
+        Faction fireFaction = new Faction("fire");
+        fireFaction.join(Goku);
+        fireFaction.join(Vegeta);
+
+        Goku.attacksOther(Vegeta, 100);
+
+        var result = Vegeta.getHealth();
+
+        assertEquals(1000, result);
+
+    }
+
+    @Test
+    public void alliesCanHealOtherAllies(){
+        Character Goku = new Character();
+        Character Vegeta = new Character();
+        Character Freezer = new Character();
+
+        Faction fireFaction = new Faction("fire");
+        fireFaction.join(Goku);
+        fireFaction.join(Vegeta);
+
+        Freezer.attacksOther(Vegeta,100);
+        Goku.healsItselfOrAllies(50, Vegeta);
+
+        var result = Vegeta.getHealth();
+
+        assertEquals(950, result);
+
+    }
+
+    @Test
+    public void charactersCanAttackObj(){
+        Character Goku = new Character();
+        Prop house = new House(2000);
+        house.isAttackedBy(Goku,100);
+
+        var result = house.getHealth();
+        assertEquals(1900, result);
+    }
+    @Test
+    public void whenHealthEquals0ObjGetsDestroyed(){
+        Character Goku = new Character();
+        Prop house = new House(2000);
+        house.isAttackedBy(Goku,3000);
+
+        var result = house.isAlive();
+        assertEquals(false, result);
+    }
+
+
+
+
+
+
+    @Test
+    public void objCantBeHealed(){
+        //function heal cant be used in a prop
+    }
+
+    @Test
+    public void objDontBelongToFactions(){
+        //factions requires a Character, cant be a Prop
+    }
+
+
+
+
+
+
+
 
 
 }

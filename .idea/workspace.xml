@@ -5,13 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87140c95-12d5-45df-9cb6-13ae4e179900" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/biblio/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/biblio/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/biblio/AuthorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/biblio/BookTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Bird.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/biblio/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/katas/Faction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/katas/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/katas/Prop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/MongoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/MySqlRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/TaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/TaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Animals/AnimalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/biblio/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tasks/TaskServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/biblio/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/biblio/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/katas/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/katas/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/katas/Position.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/biblio/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/biblio/BookTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/katas/CharacterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/katas/CharacterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +50,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,13 +85,20 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="tasks" />
+      <recent name="Animals" />
       <recent name="biblio" />
       <recent name="Biblio" />
       <recent name="katas" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AuthorTest.authorCanCountBooks">
-    <configuration name="AuthorTest.authorCanAddABook" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="Eric.rentABook(book);" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.CharacterTest.charactersCanAttackObj">
+    <configuration name="AnimalTest.catCanTalk" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -90,53 +111,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;biblio.AuthorTest.authorCanAddABook&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="AuthorTest.authorCanCountBooks" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;biblio.AuthorTest.authorCanCountBooks&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BookTest.bookCanCreateWithAttributes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;biblio.BookTest.bookCanCreateWithAttributes&quot;" />
+            <option value="&quot;Animals.AnimalTest.catCanTalk&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -169,7 +144,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CharacterTest.charactersMustBeInRangeToAttackTarget" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CharacterTest.charactersCanAttackObj" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -182,7 +157,53 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;katas.CharacterTest.charactersMustBeInRangeToAttackTarget&quot;" />
+            <option value="&quot;katas.CharacterTest.charactersCanAttackObj&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TaskServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tasks.TaskServiceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TaskServiceTest.saveTaskTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tasks.TaskServiceTest.saveTaskTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -194,10 +215,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AuthorTest.authorCanCountBooks" />
-        <item itemvalue="Gradle.AuthorTest.authorCanAddABook" />
-        <item itemvalue="Gradle.BookTest.bookCanCreateWithAttributes" />
-        <item itemvalue="Gradle.CharacterTest.charactersMustBeInRangeToAttackTarget" />
+        <item itemvalue="Gradle.CharacterTest.charactersCanAttackObj" />
+        <item itemvalue="Gradle.TaskServiceTest" />
+        <item itemvalue="Gradle.TaskServiceTest.saveTaskTest" />
+        <item itemvalue="Gradle.AnimalTest.catCanTalk" />
         <item itemvalue="Gradle.CharacterTest" />
       </list>
     </recent_temporary>
